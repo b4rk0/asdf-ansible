@@ -3,8 +3,6 @@
   connection: local
   gather_facts: false 
   become: true
-  tasks:
-  - name: install asdf plugins
   roles:
   - role: ansible-role-asdf
     asdf_plugins:
