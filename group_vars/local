@@ -1,0 +1,6 @@
+dotfiles_user_home: "{{ '~' | expanduser }}"
+dotfiles_home: "{{ dotfiles_user_home }}/.dotfiles"
+
+full_name: barko
+git_user: brk0
+git_email: brk0@waroffice.us

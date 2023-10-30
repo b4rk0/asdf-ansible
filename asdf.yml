@@ -1,0 +1,13 @@
+---
+- hosts: brk0
+  connection: local
+  gather_facts: false 
+  become: true
+  tasks:
+  - name: install asdf plugins
+  roles:
+  - role: ansible-role-asdf
+    asdf_plugins:
+    - name: "awscli"
+      versions: ["2.13.30"]
+      global: "2.13.30"
